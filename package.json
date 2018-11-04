@@ -1,0 +1,19 @@
+{
+  "name": "react-native-narratiive",
+  "version": "2.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shukerullah/react-native-narratiive"
+  },
+  "keywords": [
+    "react-native",
+    "narratiive"
+  ],
+  "author": "",
+  "license": ""
+}
