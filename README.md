@@ -4,6 +4,8 @@
 ## Getting started
 
 `$ npm install react-native-narratiive --save`
+or
+`$ yarn add react-native-narratiive`
 
 ### Mostly automatic installation
 
@@ -37,9 +39,32 @@
 
 ## Usage
 ```javascript
-import RNNarratiive from 'react-native-narratiive';
+import { Platform } from "react-native";
+import Narratiive from "react-native-narratiive";
 
-// TODO: What to do with the module?
-RNNarratiive;
+// Valid top level domain
+const domain = "";
+
+// Android application name ([a-z0-9]-) e.g. "em-survey-app".
+// There should not be any spaces in the App Name.
+const appName = "";
+
+// Content descriptor like news, sport, video, etc.
+// If not required an empty string can be used as the method argument.
+const content = "";
+
+// SDK Key provided by Narratiive
+const key = "";
+
+// Secure (https) measurement required
+const isSecureMod = true;
+
+function initialize() {
+  if (Platform.OS === "ios") {
+    Narratiive.configure(APP_NAME, TLD, PRODUCT_KEY);
+    Narratiive.trackDefault();
+  } else {
+    Narratiive.initialize(TLD, APP_NAME, "news", PRODUCT_KEY, true);
+  }
+}
 ```
-  
