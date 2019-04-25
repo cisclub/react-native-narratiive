@@ -24,6 +24,10 @@ public class RNNarratiiveModule extends ReactContextBaseJavaModule {
 
   @ReactMethod
   public void initialize(String domain, String appName, String content, String key, boolean isSecureMode) {
-    EmTracker.getInstance(reactContext, domain, appName, content, key, isSecureMode).getTracker();
+    try {
+      EmTracker.getInstance(reactContext, domain, appName, content, key, isSecureMode).getTracker();
+    } catch(Exception e) {
+      System.out.println("Error " + e.getMessage());
+    }
   }
 }
