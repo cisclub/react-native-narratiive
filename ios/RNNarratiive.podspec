@@ -4,9 +4,9 @@ Pod::Spec.new do |s|
   s.version      = "1.0.0"
   s.summary      = "RNNarratiive"
   s.description  = <<-DESC
-                  RNNarratiive
+                  React Native Narratiive
                    DESC
-  s.homepage     = ""
+  s.homepage     = "https://github.com/shukerullah/react-native-narratiive"
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "author" => "author@domain.cn" }
