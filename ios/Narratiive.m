@@ -1,8 +1,8 @@
 
-#import "RNNarratiive.h"
+#import "Narratiive.h"
 #import "EmTracker.h"
 
-@implementation RNNarratiive
+@implementation Narratiive
 
 - (dispatch_queue_t)methodQueue
 {

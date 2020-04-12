@@ -5,7 +5,7 @@
 #import <React/RCTBridgeModule.h>
 #endif
 
-@interface RNNarratiive : NSObject <RCTBridgeModule>
+@interface Narratiive : NSObject <RCTBridgeModule>
 
 @end
   
