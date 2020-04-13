@@ -9,8 +9,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shukerullah/react-native-narratiive.git",
-    "baseUrl": "https://github.com/shukerullah/react-native-narratiive"
+    "url": "git+https://github.com/cisclub/react-native-narratiive.git",
+    "baseUrl": "https://github.com/cisclub/react-native-narratiive.git"
   },
   "keywords": [
     "react-native",
