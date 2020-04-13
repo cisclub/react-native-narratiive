@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B3E7B58A1CC2AC0600A0062D /* Narratiive.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* Narratiive.m */; };
-		D208095B2443314800A35C41 /* libEmTracker-1.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D208095A2443314800A35C41 /* libEmTracker-1.3.0.a */; };
+		D2F7F8662444451E000EC96A /* libEmTracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2F7F8652444451E000EC96A /* libEmTracker.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,7 +28,7 @@
 		B3E7B5881CC2AC0600A0062D /* Narratiive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Narratiive.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* Narratiive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Narratiive.m; sourceTree = "<group>"; };
 		D20809592443314800A35C41 /* EmTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmTracker.h; sourceTree = "<group>"; };
-		D208095A2443314800A35C41 /* libEmTracker-1.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libEmTracker-1.3.0.a"; sourceTree = "<group>"; };
+		D2F7F8652444451E000EC96A /* libEmTracker.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libEmTracker.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D208095B2443314800A35C41 /* libEmTracker-1.3.0.a in Frameworks */,
+				D2F7F8662444451E000EC96A /* libEmTracker.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,20 +54,20 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				D20809582443312400A35C41 /* Framework */,
+				D20809582443312400A35C41 /* Frameworks */,
 				B3E7B5881CC2AC0600A0062D /* Narratiive.h */,
 				B3E7B5891CC2AC0600A0062D /* Narratiive.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D20809582443312400A35C41 /* Framework */ = {
+		D20809582443312400A35C41 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D2F7F8652444451E000EC96A /* libEmTracker.a */,
 				D20809592443314800A35C41 /* EmTracker.h */,
-				D208095A2443314800A35C41 /* libEmTracker-1.3.0.a */,
 			);
-			path = Framework;
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +162,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Frameworks";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -217,6 +218,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Frameworks";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -249,6 +251,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Framework",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Narratiive;
@@ -268,6 +271,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Framework",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = Narratiive;
