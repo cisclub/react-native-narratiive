@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/github_account/react-native-narratiive.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m,swift}"
-  s.ios.vendored_frameworks = 'ios/Framework/libEmTracker-1.3.0.a'
+  s.ios.vendored_frameworks = 'ios/Frameworks/libEmTracker-1.3.0.a'
   s.requires_arc = true
 
   s.dependency "React"
