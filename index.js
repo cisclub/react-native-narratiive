@@ -1,5 +1,5 @@
 import { NativeModules } from 'react-native';
 
-const { Narratiive } = NativeModules;
+const { RNNarratiive } = NativeModules;
 
-export default Narratiive;
+export default RNNarratiive;
