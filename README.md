@@ -3,15 +3,15 @@
 ## Getting started
 
 ```
-yarn add react-native-share
-react-native link react-native-share # not needed for react-native >= 0.60.0
+yarn add react-native-narratiive
+react-native link react-native-narratiive # not needed for react-native >= 0.60.0
 ```
 
 or if you're using npm
 
 ```
-npm install react-native-share --save
-react-native link react-native-share # not needed for react-native >= 0.60.0
+npm install react-native-narratiive --save
+react-native link react-native-narratiive # not needed for react-native >= 0.60.0
 ```
 
 ## iOS
@@ -31,7 +31,7 @@ This will not add the library (libEmTracker.a) to your project. So you will have
 
 1. Open up `android/app/src/main/java/[...]/MainApplication.java`
 
-   - Add `import com.shukerullah.narratiive.RNNarratiivePackage;` to the imports at the top of the file
+   - Add `import com.reactnative.narratiive.RNNarratiivePackage;` to the imports at the top of the file
    - Add `new RNNarratiivePackage()` to the list returned by the `getPackages()` method
 
 2. Append the following lines to `android/settings.gradle`:
