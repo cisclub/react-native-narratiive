@@ -5,13 +5,13 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import em.app.tracker.EmTracker;
 
-public class RNNarratiiveModule extends ReactContextBaseJavaModule {
+public class NarratiiveModule extends ReactContextBaseJavaModule {
     
-    private final String REACT_CLASS = "RNNarratiive";
+    private final String REACT_CLASS = "Narratiive";
 
     private final ReactApplicationContext reactContext;
 
-    public RNNarratiiveModule(ReactApplicationContext reactContext) {
+    public NarratiiveModule(ReactApplicationContext reactContext) {
         super(reactContext);
         this.reactContext = reactContext;
     }
